@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seedance Script Director"
+  short_description: "Desarrolla guiones puros para Seedance"
+  default_prompt: "Use $seedance-script-director para convertir una idea o brief en un guion puro listo para assets y storyboard."

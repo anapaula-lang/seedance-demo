@@ -1,0 +1,23 @@
+{
+  "skill_name": "seedance-script-director",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quiero un guion para un video Seedance de 20 segundos: una persona abre una libreta y las ideas se ordenan solas como si fueran una ciudad miniatura.",
+      "expected_output": "Should produce premise, synopsis, beat sheet, pure script, continuity notes, risks, prepare outputs/<run-id>/01_script/ contents if in a packaged project, and no asset prompts or Seedance YAML.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Tengo este brief de producto y quiero primero la historia, no imagenes: una bebida energetica suave para creativos nocturnos.",
+      "expected_output": "Should stay in pure narrative mode, ask only critical missing questions if needed, and end with a feedback gate before assets.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "One-shot: escribi el guion puro de un comercial Seedance de 60 segundos para auriculares que aislan el caos de la ciudad.",
+      "expected_output": "Should assume missing details, provide a complete story bible, include timing assumptions that can later split into <=15s clips, and mark next handoff to assets.",
+      "files": []
+    }
+  ]
+}
