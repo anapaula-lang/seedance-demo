@@ -6,10 +6,12 @@ import {
   generateAssetBibleAction,
   generateAssetImagesAction,
   type ScriptResult,
-  type AssetBible,
-  type AssetBibleResult,
-  type AssetImagesResult,
 } from "./actions";
+import type {
+  AssetBible,
+  AssetBibleResult,
+  AssetImagesResult,
+} from "@/lib/asset-pipeline";
 
 const EXAMPLES = [
   "Bestia Digital corre la Ruta 40 al amanecer, mate en mano, mochila atrás. Tono prestige drama.",

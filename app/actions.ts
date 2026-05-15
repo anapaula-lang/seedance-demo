@@ -6,12 +6,12 @@ import path from "path";
 import {
   generateAssetBible as _genBible,
   generateAssetImages as _genImages,
-  type AssetBible,
-  type AssetBibleResult,
-  type AssetImagesResult,
 } from "@/lib/asset-pipeline";
-
-export type { AssetBible, AssetBibleResult, AssetImagesResult };
+import type {
+  AssetBible,
+  AssetBibleResult,
+  AssetImagesResult,
+} from "@/lib/asset-pipeline";
 
 export type ScriptResult =
   | { ok: true; result: string; cost: number; durationMs: number }
