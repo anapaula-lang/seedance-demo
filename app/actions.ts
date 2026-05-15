@@ -3,6 +3,15 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { readFile } from "fs/promises";
 import path from "path";
+import {
+  generateAssetBible as _genBible,
+  generateAssetImages as _genImages,
+  type AssetBible,
+  type AssetBibleResult,
+  type AssetImagesResult,
+} from "@/lib/asset-pipeline";
+
+export type { AssetBible, AssetBibleResult, AssetImagesResult };
 
 export type ScriptResult =
   | { ok: true; result: string; cost: number; durationMs: number }
@@ -104,4 +113,17 @@ Al final agregá un bloque **Next handoff** con: personajes, locaciones, props, 
       error: e instanceof Error ? e.message : "Error desconocido al llamar a la API.",
     };
   }
+}
+
+export async function generateAssetBibleAction(
+  scriptOutput: string
+): Promise<AssetBibleResult> {
+  return _genBible(scriptOutput);
+}
+
+export async function generateAssetImagesAction(
+  bible: AssetBible,
+  falApiKey: string
+): Promise<AssetImagesResult> {
+  return _genImages(bible, falApiKey);
 }

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seedance Asset Director"
+  short_description: "Diseña casting, locaciones, props y moodboards"
+  default_prompt: "Use $seedance-asset-director para transformar un guion aprobado en asset bible y prompts de GPT Image 2."

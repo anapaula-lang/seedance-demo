@@ -1,0 +1,29 @@
+{
+  "skill_name": "seedance-asset-director",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Guion aprobado: una chef futurista prepara recuerdos como platos luminosos en una cocina de vidrio. Necesito casting, locacion, vestuario y props por separado.",
+      "expected_output": "Should create an Asset Bible with stable IDs for characters, wardrobe, location, props and mood, prepare all prompts/paths before generation, generate independent assets in parallel or batch when supported, use character sheet prompts with left-aligned portrait plus front/right/left/back views on white, use location prompts as 16:9 2x2 grids, and organize files under outputs/<run-id>/02_assets/ if in a packaged project.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "A partir de este beat sheet aprobado, generame character sheets y locaciones, pero no hagas storyboard todavia.",
+      "expected_output": "Should stay in asset stage, avoid shot lists/storyboard, use the standard character sheet format for characters and 2x2 grids for locations, and end with an approval question for assets.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "One-shot assets para un spot Seedance: atleta urbana, zapatillas inteligentes, tunel de metro, lluvia neon, sin generar video.",
+      "expected_output": "Should produce separate reusable asset prompts/IDs, mark assumptions, and provide next handoff to storyboard without Seedance prompt YAML.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Te paso character sheets completos del robot y el cavernicola. No los regeneres; solo usalos para el storyboard y genera la locacion que falta.",
+      "expected_output": "Should copy/register provided character sheets as source/approved assets, avoid regenerating them, generate only missing location assets, and use provided sheets as primary references.",
+      "files": []
+    }
+  ]
+}
